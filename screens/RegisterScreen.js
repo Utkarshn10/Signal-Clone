@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import {StyleSheet, Text, View, KeyboardAvoidingView} from "react-native";
+import {StyleSheet, View, KeyboardAvoidingView} from "react-native";
 import {StatusBar} from "expo-status-bar";
-import {Button, Input, Image} from "react-native-elements";
+import {Button, Input, Text} from "react-native-elements";
 
 const RegisterScreen = ({navigation}) => {
   const [name, setName] = useState("");
@@ -65,6 +65,18 @@ const RegisterScreen = ({navigation}) => {
 export default RegisterScreen;
 
 const styles = StyleSheet.create({
-  container: {},
-  button: {},
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 10,
+    backgroundColor: "white",
+  },
+  inputContainer: {
+    width: 300,
+  },
+  button: {
+    width: 200,
+    marginTop: 10,
+  },
 });
