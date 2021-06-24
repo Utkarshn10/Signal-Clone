@@ -1,6 +1,7 @@
-import * as firebase from "firebase";
+import firebase from "firebase";
 import "firebase/firestore";
 import "firebase/auth";
+
 const firebaseConfig = {
   apiKey: "AIzaSyBDFYRw61joqB_JhMBdhsq6_gb7fysmyyw",
   authDomain: "signal-clone-e3c29.firebaseapp.com",
@@ -19,5 +20,6 @@ if (firebase.apps.length === 0) {
 }
 
 const db = app.firestore();
-const auth = app.auth();
+const auth = firebase.auth();
+
 export {db, auth};
